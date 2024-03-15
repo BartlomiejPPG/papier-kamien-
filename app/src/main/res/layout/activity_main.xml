@@ -82,6 +82,7 @@
         android:id="@+id/paperButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:tag="1"
         android:text="papier"
         tools:layout_editor_absoluteX="24dp"
         tools:layout_editor_absoluteY="410dp" />
@@ -90,6 +91,7 @@
         android:id="@+id/rockButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:tag="2"
         android:text="kamień"
         tools:layout_editor_absoluteX="160dp"
         tools:layout_editor_absoluteY="410dp" />
@@ -98,6 +100,7 @@
         android:id="@+id/scissorsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:tag="3"
         android:text="nożyce"
         tools:layout_editor_absoluteX="294dp"
         tools:layout_editor_absoluteY="408dp" />
