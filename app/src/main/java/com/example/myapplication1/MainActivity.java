@@ -61,10 +61,31 @@ public class MainActivity extends AppCompatActivity {
             wonLost.setText("przegrywasz");
         }
 
-        /*switch(userSelection) {
+        switch(userSelection) {
             case 1:
-                userSelection.se
-        }*/
+                userSelection.setText("kamien");
+                break;
+            case 2:
+                userSelection.setText("papier");
+                break;
+            case 3:
+                userSelection.setText("nozyce");
+                break;
+        }
+
+        switch(compSelection) {
+            case 1:
+                compSelection.setText("kamien");
+                break;
+            case 2:
+                compSelection.setText("papier");
+                break;
+            case 3:
+                compSelection.setText("nozyce");
+                break;
+        }
+
+        setScore(userScore,compScore);
     }
 
     private void setScore (int userScore, int compScore){
