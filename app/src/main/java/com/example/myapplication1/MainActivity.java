@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-    TextView userSelection, compSelection, wonLost, scoreView;
+    TextView userSelection, compSelection, wonOrLost, scoreView;
 
     int userScore = 0, compScore = 0;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         userSelection = findViewById(R.id.userSelection);
         compSelection = findViewById(R.id.compSelection);
-        wonLost = findViewById(R.id.wonLost);
+        wonOrLost = findViewById(R.id.wonOrLost);
         scoreView = findViewById(R.id.scoreView);
 
         userSelection.setText("");
@@ -52,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
 
         int compSelection = random.nextInt(high) + low;
         if(userSelection == compSelection) {
-            wonLost.setText("Remis");
+            wonOrLost.setText("Remis");
         }else if ((userSelection-compSelection) %3 ==1){
             userScore++;
-            wonLost.setText("wygrywasz");
+            wonOrLost.setText("wygrywasz");
         } else {
             compScore++;
-            wonLost.setText("przegrywasz");
+            wonOrLost.setText("przegrywasz");
         }
 
         switch(userSelection) {
