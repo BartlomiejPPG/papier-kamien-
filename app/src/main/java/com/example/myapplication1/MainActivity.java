@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public void rspButtonSelected(View view){
 
         int userSelection = Integer.parseInt(view.getTag().toString());
-        Log.i(TAG, msg: "rspButtonSelected: " + userSelection);
+        Log.i(TAG, msg: "rspButtonSelected:" + userSelection);
         matchGame(userSelection);
 
     }
